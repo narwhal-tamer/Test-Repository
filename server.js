@@ -15,7 +15,6 @@ app.get(`/`, (req, res) => {
     const newCount = parseInt(count) + 1
     //const newCountString = String.format(newCount)
     
-
     writeFileSync(`/home/pi/Desktop/database.txt`, newCount.toString());
 
     res.send(`
